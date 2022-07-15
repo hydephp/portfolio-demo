@@ -180,6 +180,7 @@ return [
     'footer' => [
         'enabled' => true,
         'markdown' => '[HydePHP](https://github.com/hydephp/hyde) Demo Website.
+            Source code on [GitHub](https://github.com/hydephp/portfolio-demo).
             Images by [Pixabay](http://pixabay.com) and [Picjumbo](https://picjumbo.com/).'
     ],
 
