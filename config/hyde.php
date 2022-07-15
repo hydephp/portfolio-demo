@@ -59,7 +59,7 @@ return [
 
     'site_url' => env('SITE_URL', 'https://hydephp.github.io/portfolio-demo/'),
 
-    'pretty_urls' => true,
+    'pretty_urls' => false,
 
     'generate_sitemap' => true,
 
