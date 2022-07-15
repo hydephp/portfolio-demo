@@ -37,7 +37,7 @@ return [
     |
     */
 
-    'name' => $siteName = env('SITE_NAME', 'HydePHP'),
+    'name' => $siteName = env('SITE_NAME', 'Jane Doe Photography'),
 
     /*
     |--------------------------------------------------------------------------
@@ -179,7 +179,8 @@ return [
 
     'footer' => [
         'enabled' => true,
-        'markdown' => 'Site proudly built with [HydePHP](https://github.com/hydephp/hyde) 🎩',
+        'markdown' => '[HydePHP](https://github.com/hydephp/hyde) Demo Website.
+            Images by [Pixabay](http://pixabay.com) and [Picjumbo](https://picjumbo.com/).'
     ],
 
     /*
@@ -212,7 +213,10 @@ return [
         // To get started quickly, you can uncomment the defaults here.
         // See the documentation link above for more information.
         'custom' => [
-            // NavItem::toLink('https://github.com/hydephp/hyde', 'GitHub', 200),
+            NavItem::toLink('#about', 'About', 100),
+            NavItem::toLink('#gallery', 'Gallery', 200),
+            NavItem::toLink('#contact', 'Contact', 300),
+            NavItem::toLink('https://twitter.com/HydeFramework', 'Twitter', 400),
         ],
     ],
 
