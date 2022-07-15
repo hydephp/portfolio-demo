@@ -97,6 +97,19 @@ return [
         // Meta::name('keywords', 'Static Sites, Blogs, Documentation'),
         Meta::name('generator', 'HydePHP '.Hyde\Framework\Hyde::version()),
         Meta::property('site_name', $siteName),
+        
+        '<style>
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .gallery img {
+                max-width: 65vw;
+                width: 44ch;
+                margin: 3ch 2ch;
+            }
+        </style>',
     ],
 
     /*
