@@ -57,7 +57,7 @@ return [
     |
     */
 
-    'site_url' => env('SITE_URL', null),
+    'site_url' => env('SITE_URL', 'https://hydephp.github.io/portfolio-demo/'),
 
     'pretty_urls' => false,
 
