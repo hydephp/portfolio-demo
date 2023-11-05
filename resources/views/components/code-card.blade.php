@@ -53,6 +53,15 @@
                         margin: 0 -1rem;
                         width: calc(100% + 2rem)!important;
                     }
+
+                    .line-number {
+                        display: none;
+                    }
+
+                    .line {
+                        padding-left: 1rem;
+                        display: block;
+                    }
                 }
 
                 table {
