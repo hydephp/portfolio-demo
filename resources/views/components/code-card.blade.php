@@ -26,6 +26,35 @@
                     display: inline-block;
                 }
 
+                @media (max-width: 1280px) {
+                    .line-wrappable {
+                        max-width: 85vw;
+                    }
+                }
+
+                @media (max-width: 1024px) {
+                    .line-wrappable {
+                        max-width: 80vw;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    .line-wrappable {
+                        max-width: 75vw;
+                    }
+                }
+
+                @media (max-width: 640px) {
+                    .line-wrappable {
+                        max-width: 65vw;
+                    }
+
+                    .code-card {
+                        margin: 0 -1rem;
+                        width: calc(100% + 2rem)!important;
+                    }
+                }
+
                 table {
                     border-collapse: collapse;
                     border-spacing: 0;
