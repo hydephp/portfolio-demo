@@ -19,6 +19,13 @@
                     padding-left: 1rem;
                 }
 
+                .line-wrappable {
+                    white-space: normal;
+                    word-break: break-word;
+                    width: 68rem;
+                    display: inline-block;
+                }
+
                 table {
                     border-collapse: collapse;
                     border-spacing: 0;
@@ -27,6 +34,7 @@
 
                 td {
                     padding: 0;
+                    vertical-align: top;
                 }
             </style>
             <pre style="white-space: nowrap">
@@ -64,14 +72,14 @@
                             <td>&nbsp;</tr>
                         <tr class="line">
                             <td><span class="line-number">&nbsp;9</span></td>
-                            <td><span style="color: #A6ACCD;">This is a demo website built with </span><span style="color: #89DDFF;">[</span><span style="color: #C3E88D;">HydePHP</span><span style="color: #89DDFF;">]</span><span style="color: #89DDFF;">(</span><span style="color: #F07178;">http://hydephp.com/</span><span style="color: #89DDFF;">)</span><span style="color: #A6ACCD;">, a free and open source static site generator. This entire site is built using just Markdown text that is transformed into a fast and secure website that can be published anywhere.</span></td>
+                            <td class="line-wrappable"><span style="color: #A6ACCD;">This is a demo website built with </span><span style="color: #89DDFF;">[</span><span style="color: #C3E88D;">HydePHP</span><span style="color: #89DDFF;">]</span><span style="color: #89DDFF;">(</span><span style="color: #F07178;">http://hydephp.com/</span><span style="color: #89DDFF;">)</span><span style="color: #A6ACCD;">, a free and open source static site generator. This entire site is built using just Markdown text that is transformed into a fast and secure website that can be published anywhere.</span></td>
                         </tr>
                         <tr class="line">
                             <td><span class="line-number">10</span></td>
                             <td>&nbsp;</tr>
                         <tr class="line">
                             <td><span class="line-number">11</span></td>
-                            <td><span style="color: #A6ACCD;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur consectetur, nisi nisl aliquet nisi, euismod consectetur nisi nisi euismod nisi.</span></td>
+                            <td class="line-wrappable"><span style="color: #A6ACCD;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur consectetur, nisi nisl aliquet nisi, euismod consectetur nisi nisi euismod nisi.</span></td>
                         </tr>
                         <tr class="line">
                             <td><span class="line-number">12</span></td>
