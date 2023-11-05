@@ -10,6 +10,85 @@
 
     <article>
         <main>
+            <style> /* Margin and rounding are personal preferences, overflow-x-auto is recommended. */ pre { border-radius: 0.25rem; margin-top: 1rem; margin-bottom: 1rem; overflow-x: auto; } /* Add some vertical padding and expand the width to fill its container. The horizontal padding comes at the line level so that background colors extend edge to edge. */ pre code.torchlight { display: block; min-width: -webkit-max-content; min-width: -moz-max-content; min-width: max-content; padding-top: 1rem; padding-bottom: 1rem; } /* Horizontal line padding to match the vertical padding from the code block above. */ pre code.torchlight .line { padding-left: 1rem; padding-right: 1rem; } /* Push the code away from the line numbers and summary caret indicators. */ pre code.torchlight .line-number, pre code.torchlight .summary-caret { margin-right: 1rem; } </style>
+            <style>
+                #code-card-wrapper {
+                    padding: 1rem;
+                    resize: horizontal;
+                    overflow: hidden;
+                    max-width: 100%;
+
+                    width: 80ch; /* Todo see if we can add JS to sync resize changes to data state */
+                }
+
+                #code-card-wrapper:hover {
+                    outline: rgba(255, 255, 255, 0.5) solid;
+                }
+
+                .code-card {
+                    overflow: hidden;
+                    background: #292d3e;
+                    width: 100%;
+                    border-radius: 8px;
+                }
+
+                .code-card main>pre {
+                    margin: 0;
+                }
+                .code-card main>code {
+                    font-family: 'Fira Code', monospace
+                }
+
+                .code-card header {
+                    padding: 8px 4px;
+                    background: #212529;
+                    color: #fff;
+                    display: flex;
+                    align-items: center
+                }
+
+                .code-card header h1 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin: 0 auto;
+                    color: rgba(255, 255, 255, .75);
+                    font-family: sans-serif
+                }
+
+                .code-card header menu {
+                    user-select: none;
+                    margin-left: 10px;
+                    float: left;
+                    position: absolute
+                }
+
+                .code-card header menu button {
+                    all: unset;
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    opacity: .75;
+                    margin-right: 1px;
+                }
+
+                .code-card header menu button:hover {
+                    opacity: 1
+                }
+
+                .code-card header menu button.red {
+                    background-color: #f3615a
+                }
+
+                .code-card header menu button.yellow {
+                    background-color: #f4c036
+                }
+
+                .code-card header menu button.green {
+                    background-color: #3ccb3e
+                }
+            </style>
             <style>
                 .line-number {
                     color:#3A3F58;
